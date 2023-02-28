@@ -1,0 +1,128 @@
+/* layout component */
+.main {
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.container {
+  width: 90%;
+  margin: 2rem auto;
+}
+/* news list  */
+/* newsItemss component */
+.newsItem {
+  width: 100%;
+  display: grid;
+  margin: 3rem auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  gap: 20px;
+  row-gap: 20px;
+}
+/* newsItems */
+.newsItems h4 {
+  color: #020202;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+/*  btn */
+.btn {
+  color: var(--fontPrimary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--newGreen);
+  padding: 9px;
+  font-weight: 500;
+  border-radius: 0.9rem;
+}
+.btn:hover {
+  background: var(--activeGreen);
+}
+@media only screen and (max-width: 600px) {
+  .newsItem {
+    width: 90%;
+  }
+}
+
+/* newsItems component */
+.newsItems {
+  max-width: 400px;
+  height: fit-content;
+  background-color: #ebebeb9f;
+  padding: 10px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding-bottom: 1rem;
+}
+
+.newsItems:hover {
+  box-shadow: 0 0 15px 0 #e5e5e5;
+}
+
+.newsItems p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0.5rem 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.newsItems img {
+  width: 100%;
+  border-radius: 0.8rem;
+  object-fit: cover;
+}
+
+.newsItems .qmeta {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 6px;
+}
+
+.newsItems .qmeta p {
+  font-size: 1.2rem;
+  color: #020202;
+  font-weight: 400;
+}
+/* flexContainer */
+.flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.preBtn {
+  padding: 7px 20px;
+  border: 0;
+  color: #4b4b4b;
+  background: var(--smartBlue);
+  font-weight: 500;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  transition: 0.1s;
+  cursor: pointer;
+}
+.preBtn:hover {
+  opacity: 0.9;
+}
+.nextBtn {
+  padding: 7px 20px;
+  border: 0;
+  background: var(--newGreen);
+  font-weight: 500;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  transition: 0.1s;
+  cursor: pointer;
+}
+.nextBtn:hover {
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 600px) {
+  .newsItems {
+    width: 100%;
+  }
+}

@@ -1,0 +1,57 @@
+/* styling */
+.FoTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 1.4rem;
+}
+.FoTitle h2 {
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.contact .rows {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.8rem;
+  transition: 0.4s;
+}
+.fb {
+  padding: 10px 35px;
+  color: #000000;
+  border-top-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  background-color: #0071f3a1;
+}
+.fb:hover {
+  background: silver;
+  color: blue;
+  transform: scale(0.9);
+}
+.google {
+  padding: 10px 35px;
+  color: #00ff84;
+  border-top-right-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+  background-color: #777777e0;
+}
+.google:hover {
+  background: silver;
+  color: #000;
+  transform: scale(0.9);
+}
+.github {
+  padding: 10px 35px;
+  color: #ffffff;
+  border-top-right-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+  background-color: #161616e0;
+}
+.github:hover {
+  background: #1dd881;
+  color: rgb(0, 0, 0);
+  transform: scale(0.9);
+  border-top-right-radius: 0.9rem;
+  border-bottom-left-radius: 0.9rem;
+}

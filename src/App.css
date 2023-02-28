@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
+/*  include font family */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"); /* Open sans from google font  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*  CSS COLOR CODES */
+:root {
+  --activeGreen: #2dbf64;
+  --fontPrimary: #002333;
+  --questionBG: #e4e8ee;
+  --successGreen: #00ff84;
+  --newGreen: #1dd881;
+  --bodyBackground: #f2f4f8;
+  --smartYellow: #ffc916;
+  --smartBlue: #0070f3;
+  --purpule: #728fce;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*  body tag */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  scroll-behavior: smooth;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*  selections */
+::selection {
+  background-color: #1e7de9;
+  color: #ffffff;
 }
